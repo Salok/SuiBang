@@ -14,8 +14,8 @@ var TitleScreen = {
 	draw: function title_screen_draw() {
 		pintor.clearRect(0, 0, width, height);
 
-		pintor.fillStyle = "#f00";
-		pintor.fillRect(20, 20, 20, 20);
+		pintor.fillStyle = '#f00';
+		pintor.fillText('Soy TitleScreen', 30, 30);
 	}
 };
 
