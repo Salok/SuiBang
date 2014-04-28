@@ -1,4 +1,3 @@
-
 //__extends sirve para imitar la herencia dentro de JS
 var __extends = this.__extends || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -173,6 +172,7 @@ GUIScreen.prototype.click = function GUIScreen_click(event) {
 GUIScreen.prototype.add = function GUIScreen_add(name, sub) {
 	this.subs[name] = sub;
 	sub.screen = this;
+	this.needs_drawing = true;
 	return this;
 }
 GUIScreen.prototype.forEach = function GUIScreen_forEach(fcn) {
